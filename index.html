@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLA MUNDO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <section class="tarjeta">
+            <h1>Flujo de Trabajo (GitHub)</h1>
+            <ul id="lista-flujo">
+                <li>1. Crear repositorio y subirlo al github</li>
+                <li>2. Subir un commit</li>
+                <li>3. Crear una rama aparte de desarrollo</li>
+                <li>4. Elaborar un PR</li>
+                <li>5. Crear una issues</li>
+                <li>6. Aprobar y mergear el PR</li>
+                <li>7. Anclar una issues a un PR</li>
+            </ul>
+            <button id="boton-flujo">Marcar como repasado</button>
+        </section>
+
+        <section class="tarjeta">
+            <h1>Comandos de Git (Haz clic)</h1>
+            <ul id="lista-comandos">
+                <li class="comando" data-def="Verifica la versión de git instalada en el equipo">git --version</li>
+                <li class="comando" data-def="Configura tu usuario y correo electrónico global">git config --global</li>
+                <li class="comando" data-def="Inicializa git dentro de la carpeta">git init</li>
+                <li class="comando" data-def="Muestra archivos nuevos, archivos modificados y commit">git status</li>
+                <li class="comando" data-def="Añade todos los cambios listos para el commit">git add</li>
+                <li class="comando" data-def="Crea el commit con un título">git commit -m "título"</li>
+                <li class="comando" data-def="Sube los cambios a la rama que se encuentre en ese momento">git push</li>
+                <li class="comando" data-def="Trae los cambios de la rama">git pull</li>
+                <li class="comando" data-def="Se utiliza para agregar rama cambiando el nombre del proyecto">git branch Dev</li>
+                <li class="comando" data-def="Cambia de rama para trabajar">git checkout Dev</li>
+            </ul>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
